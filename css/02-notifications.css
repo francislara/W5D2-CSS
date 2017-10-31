@@ -1,0 +1,55 @@
+/* PHASE 2: Notifications */
+.badge {
+  border-radius: 50%;
+  background: black;
+  padding: 1px 6px;
+  font-size: 14px;
+}
+
+li:hover .badge{
+  background: red;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+
+.header-list > li {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  left: -1px;
+  color: black;
+  font-size: 14px;
+  background-color: white;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  border-bottom: 1px solid lightgray;   /*border wrap the dropdown, not the list items*/
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+
+}
+
+li:hover .dropdown{
+  display:block;
+}
+
+.dropdown li {
+  display: block;
+  padding: 10px 20px;
+  border-top: 1px solid lightgray;
+  white-space: nowrap;              /*use this so the messages don't shrink*/
+}
+
+.dropdown.parent.hover {
+  display: block;
+}
+
+.dropdown {
+  display:none;
+}
